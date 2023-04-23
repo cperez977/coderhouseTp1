@@ -1,0 +1,96 @@
+/*  fuentes   */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Libre+Franklin:ital,wght@0,100;1,500&family=Poppins:wght@100&display=swap");
+/* valores a cero*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* valores de fuentes*/
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+}
+/* valores de encabezado*/
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: olive;
+}
+/* valores del logo*/
+header img {
+  height: 100px;
+}
+/* valores del los enlaces a las otras páginas*/
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 21px;
+}
+/* valores del cuerpo*/
+body {
+  height: auto;
+  background-image: url(../img/fondoIbera.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+/* valores del contenedor principal*/
+main {
+  display: flex;
+  /*  height: 500px;
+  width: 600px;*/
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+/* valores de la sección*/
+section {
+  justify-content: center;
+  margin: 0px auto;
+  border: solid 1px;
+}
+/* valores valores del pié de pagina*/
+footer {
+  text-align: center;
+}
+/* valores de la imagen de la sección*/
+section img {
+  height: 300px;
+}
+
+/*galeria en colección*/
+.container-galeria {
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(3, 300px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+/*imagenes*/
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.caraya {
+  grid-column: 1 / 3;
+}
+
+.lobo-gargantilla-alondra {
+  grid-row: 2 / 4;
+  grid-column: 3 / 4;
+}
+
+.mono-caraya {
+  grid-column: 2 /3;
+  grid-row: 3 / 5;
+}
